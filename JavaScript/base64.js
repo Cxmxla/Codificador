@@ -22,9 +22,9 @@ function decodificarBase64(codigo) {
       )
     ) {
       valido = false;
-      tipo.style.backgroundColor = "lightcoral";
+      tipo.style.backgroundColor = "red";
       setTimeout(
-        () => (tipo.style.backgroundColor = "#009eff"),
+        () => (tipo.style.backgroundColor = "red"),
         1000
       );
       tipo.style.transition = "1s";

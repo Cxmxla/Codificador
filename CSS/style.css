@@ -9,94 +9,119 @@
 }
 
 body{
-    background-color: rgb(255, 255, 123);
+    background-color: rgb(250, 175, 175);
 }
 
 h1{
     text-align:center;
-    padding: 40px;
+    padding-top: 40px;
     font-size: 40pt;
     font-weight: bolder;
 }
 
-.container, form{
+/*------------ Container principal ----------- */
+
+form{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 500px;
+    height: 700px;
     align-items: center;
     justify-content: space-evenly;
 }
 
-/*coluna da esquerda*/
+@media (max-width:920px){
+    form{
+        flex-direction: column;
+        height: 1200px;
+    }
+}
+
+/*----------- coluna da esquerda -----------*/
 
 .esquerda{
     width: 45%;
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+@media (max-width:920px){
+    .esquerda{
+        width:90%;
+    }
+}
+
+/*---------- TextArea ---------*/
+
 .item1{
-    height: 80%;
+    height: 60%;
+}
+
+@media (max-width:920px){
+    .item1{
+        height: 60%;
+    }
 }
 
 #entrada{
     width: 100%;
     height: 100%;
-    color: blue;
-    background-color: rgb(243, 128, 128);
-    border-radius: 5px;
+    color: black;
+    background-color: rgb(234, 251, 73);
+    border-radius: 10px;
     padding: 5px;
+    border-style:double;
+    border: solid 5px rgb(236, 56, 176);
+    box-shadow: 20px 10px 10px rgb(195, 0, 255);
+    resize: none;
     
 
 }
 
+/*---------- Botões ---------*/
+
 .item2{
-    padding: 10px;
     height: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-/**coluna da direita**/
-
-.direita{
-    width: 45%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
+@media (max-width:920px){
+    .esquerda .item2{
+        height: 30%;
+    }
 }
+/*----------- Select ----------- */
 
-.resposta{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(243, 128, 128);
-    border-radius: 5px;
-    padding: 5px;
-
-}
-
-.enviar{
-    width: 30%;
-    margin-bottom: 5px;
-    height: 30px;
+.metodo{
     background-color: yellow;
-    border-radius: 10px;
-    box-shadow: 5px 5px 2px rgb(224, 91, 91);
+    border: solid 2px purple;
+    padding: 5px;
+    
 }
 
-.enviar:hover{
-    cursor:pointer;
-    background-color: black;
-    box-shadow:5px 5px 2px yellow;
-    color:yellow;
-    transition: .5s;
-    border-color: rgb(224, 91, 91);
+/*---------- Tipo de Cifra --------*/
+
+.passo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
+
+/*---------- Fieldsets--------*/
+
+.tipo, .field_tipodecodigo{
+    border: none;
+    margin-bottom:5px;
+
+}
+
+/*-------- Botão -------*/
 
 .btns{
     width: 100%;
@@ -104,33 +129,73 @@ h1{
     justify-content: center;
 }
 
-.Copiar{
-    width: 50%;
+.enviar{
+    width: 30%;
+    margin-bottom: 5px;
     height: 30px;
     background-color: yellow;
+    border: solid 2px purple;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px rgb(224, 91, 91);
+}
+
+.enviar:hover{
+    cursor:pointer;
+    background-color: purple;
+    box-shadow:5px 5px 2px yellow;
+    color:yellow;
+    transition: .5s;
+    border-color: rgb(224, 91, 91);
+
+}
+
+/**coluna da direita**/
+
+.direita{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width:920px){
+    .direita{
+        width:90%;
+    }
+}
+
+/*--------- Mensagem a ser exibida ---------------*/
+.resposta{
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: rgb(234, 251, 73);
+    border-radius: 10px;
+    padding: 5px;
+    border-style:double;
+    border: solid 5px rgb(236, 56, 176);
+    box-shadow: 20px 10px 10px rgb(195, 0, 255);
+
+}
+
+/*------------- Botão de Copiar -------------*/
+
+.Copiar{
+    width: 30%;
+    height: 30px;
+    background-color: yellow;
+    border: solid 2px purple;
     border-radius: 10px;
     box-shadow: 5px 5px 2px rgb(224, 91, 91);
 }
 
 .Copiar:hover{
     cursor:pointer;
-    background-color: black;
+    background-color: purple;
     box-shadow:5px 5px 2px yellow;
     color:yellow;
     transition: .5s;
     border-color: rgb(224, 91, 91);
 }
 
-.metodo{
-    padding-bottom: 5px;
-}
-
-.selecao{
-    padding-bottom: 5px;
-}
-
-.tipo{
-    border: none;
-    margin-bottom:5px;
-
-}

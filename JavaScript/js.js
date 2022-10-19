@@ -8,7 +8,9 @@ var entrada = document.querySelector("#entrada");
 
 passo.style.display = "none";
 metodo.addEventListener("change", function () {
-  metodo.style.backgroundColor = "#009eff";
+  metodo.style.backgroundColor = "purple";
+  metodo.style.border = "solid yellow";
+  metodo.style.color = "yellow";
   metodo.style.transition = "none";
   if (metodo.selectedIndex == 1) {
     // "passo" aparece se Cifra for selecionado
@@ -36,9 +38,9 @@ enviar.addEventListener("click", function (e) {
   e.preventDefault();
   var mensagem = entrada.value;
   if (metodo.selectedIndex == 0) {
-    metodo.style.backgroundColor = "#ff6b6b";
+    metodo.style.backgroundColor = "red";
     setTimeout(
-      () => (metodo.style.backgroundColor = "#ff6b6b"),
+      () => (metodo.style.backgroundColor = "red"),
       1000
     );
     metodo.style.transition = "1s";
