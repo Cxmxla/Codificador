@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Codificador</title>
+</head>
+<body>
+        <h1>Codificador</h1>
+    <section class="container">
+        <form>
+            <div class = "esquerda">
+                <div class="item1">
+                    <textarea id="entrada"
+                     placeholder="Digite aqui o que você deseja codificar ou decodificar c:"
+                     required>
+                    </textarea>
+                </div>
+                <div class="item2">
+                    <div class="tipodecodigo">
+                        <fieldset class="field_tipodecodigo">
+                        <select class="metodo" required>
+                            <option>Selecione o tipo de código</option>
+                            <option>Cifra de Cesar</option>
+                            <option>Base64</option>
+                        </select>
+                        </fieldset>
+
+                        <div class = "passo">
+                            <input id="chave"
+                            type="range"
+                            value="21"
+                            min="1"
+                            max="99"
+                            oninput="this.nextElementSibling.value = this.value"/>
+                            <output>21</output>
+                        </div>
+                    </div>
+
+                    <fieldset class ="tipo">
+                    <div class="coddecod">
+                        <input
+                            type="radio"
+                            id="codificar"
+                            name="coddecod"
+                            value="msg-codigo"
+                            checked
+                            />
+                        <label for="codificar">Codificar</label>
+                    </div>
+                    <div class="cod-decod">
+                        <input
+                        type="radio"
+                        id="decodificar"
+                        name="coddecod"
+                        value="codigo-msg"/>
+                        <label for="decodificar">Decodificar</label>
+                    </div>
+                    </fieldset>
+                    
+                    <div class="btns">
+                        <button class = "enviar">Codificar</button>
+                    </div>
+                </div>
+            </div>
+            <div class = "direita">
+                <div class="item1">
+                    <output class="saida"><div id="resposta" class="resposta"></div></output>
+                </div>
+                <div class="item2">
+                    <button class = "Copiar">Copiar</button>
+                </div>
+            </div>
+        </form>
+        </section>
+
+    </body>
+
+    <script src ="JavaScript/js.js"></script>
+    <script src ="JavaScript/cifra.js"></script>
+    <script src = "JavaScript/base64.js"></script>
+</html>

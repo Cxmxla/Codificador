@@ -1,0 +1,136 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+body{
+    background-color: rgb(255, 255, 123);
+}
+
+h1{
+    text-align:center;
+    padding: 40px;
+    font-size: 40pt;
+    font-weight: bolder;
+}
+
+.container, form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*coluna da esquerda*/
+
+.esquerda{
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item1{
+    height: 80%;
+}
+
+#entrada{
+    width: 100%;
+    height: 100%;
+    color: blue;
+    background-color: rgb(243, 128, 128);
+    border-radius: 5px;
+    padding: 5px;
+    
+
+}
+
+.item2{
+    padding: 10px;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/**coluna da direita**/
+
+.direita{
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.resposta{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(243, 128, 128);
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+.enviar{
+    width: 30%;
+    margin-bottom: 5px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px rgb(224, 91, 91);
+}
+
+.enviar:hover{
+    cursor:pointer;
+    background-color: black;
+    box-shadow:5px 5px 2px yellow;
+    color:yellow;
+    transition: .5s;
+    border-color: rgb(224, 91, 91);
+
+}
+
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Copiar{
+    width: 50%;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px rgb(224, 91, 91);
+}
+
+.Copiar:hover{
+    cursor:pointer;
+    background-color: black;
+    box-shadow:5px 5px 2px yellow;
+    color:yellow;
+    transition: .5s;
+    border-color: rgb(224, 91, 91);
+}
+
+.metodo{
+    padding-bottom: 5px;
+}
+
+.selecao{
+    padding-bottom: 5px;
+}
+
+.tipo{
+    border: none;
+    margin-bottom:5px;
+
+}
