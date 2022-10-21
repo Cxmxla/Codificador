@@ -17,6 +17,8 @@ h1{
     padding-top: 40px;
     font-size: 40pt;
     font-weight: bolder;
+    font-family: 'Dancing Script', cursive;
+    color:purple
 }
 
 /*------------ Container principal ----------- */
@@ -176,26 +178,7 @@ form{
     border-style:double;
     border: solid 5px rgb(236, 56, 176);
     box-shadow: 20px 10px 10px rgb(195, 0, 255);
+    resize: none;
 
-}
-
-/*------------- Botão de Copiar -------------*/
-
-.Copiar{
-    width: 30%;
-    height: 30px;
-    background-color: yellow;
-    border: solid 2px purple;
-    border-radius: 10px;
-    box-shadow: 5px 5px 2px rgb(224, 91, 91);
-}
-
-.Copiar:hover{
-    cursor:pointer;
-    background-color: purple;
-    box-shadow:5px 5px 2px yellow;
-    color:yellow;
-    transition: .5s;
-    border-color: rgb(224, 91, 91);
 }
 

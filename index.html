@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
     <title>Codificador</title>
 </head>
 <body>
@@ -12,9 +15,7 @@
         <form>
             <div class = "esquerda">
                 <div class="item1">
-                    <textarea id="entrada"
-                     placeholder="Digite aqui o que você deseja codificar ou decodificar c:">
-                    </textarea>
+                    <textarea id = "entrada" placeholder="Digite aqui o que você deseja traduzir c:"></textarea>
                 </div>
                 <div class="item2">
                     <div class="tipodecodigo">
@@ -65,10 +66,9 @@
             </div>
             <div class = "direita">
                 <div class="item1">
-                    <output class="saida"><div id="resposta" class="resposta"></div></output>
+                    <output class="saida"><textarea id="resposta" class="resposta" placeholder="A tradução aparecerá aqui"></textarea></output>
                 </div>
                 <div class="item2">
-                    <button class = "Copiar">Copiar</button>
                 </div>
             </div>
         </form>
